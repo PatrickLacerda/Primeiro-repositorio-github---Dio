@@ -38,3 +38,36 @@ comando do git
 #### git push origin main 
 
 - envia o commit para nuvem 
+
+
+
+
+
+# Criação de chave SSD e tokken 
+
+
+
+#### ssh-keygen -t ed25519 -C seu e-mail
+
+enter
+
+vai pedir para criar uma senha após isso a chave será criada
+
+## visualizar o conteudo das chaves 
+
+#### cat arquivo com a chave
+
+cat id_ed25519.pub
+
+ele irá mostrar achave publica 
+
+#### Iniciar o conteudo que irá iniciar as chaves
+
+##### eval $(ssh-agent -s)
+
+entregar a chave para o agent 
+
+#### ssh-add id_ed25519
+
+enter + senha da chave
+
